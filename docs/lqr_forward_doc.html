@@ -3,7 +3,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
 <link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/mdmath.css">
+    <!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head><body class="markdown-body">
+	<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+    		</ul>
+		</nav>
 <h1>LQR Forward pass</h1>
 <h2>Notation</h2>
 <p>In this part we consider a normal distribution over <eq><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="bold">x</mi></mrow></mrow><annotation encoding="application/x-tex">{\bold x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.44444em;"></span><span class="strut bottom" style="height:0.44444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathbf">x</span></span></span></span></span></eq> and <eq><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="bold">u</mi></mrow></mrow><annotation encoding="application/x-tex">{\bold u}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.44444em;"></span><span class="strut bottom" style="height:0.44444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathbf">u</span></span></span></span></span></eq>:</p>
