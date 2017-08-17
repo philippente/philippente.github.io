@@ -66,7 +66,7 @@ qv = cv_ext[t, :]
 
 <span class="hljs-keyword">if</span> t &lt; T - <span class="hljs-number">1</span>:
     Qm += Fm[t, :, :].T.dot(Vm[t + <span class="hljs-number">1</span>, :, :]).dot(Fm[t, :, :])
-    qv += Fm[t, :, :].T.dot(Vm[t + <span class="hljs-number">1</span>, :, :].dot(fv[t, :]) + vv[t + <span class="hljs-number">1</span>, :])
+    qv += Fm[t, :, :].T.dot(vv[t + <span class="hljs-number">1</span>, :, :] + Vm[t + <span class="hljs-number">1</span>, :, :].dot(fv[t, :]))
 
 Qm = <span class="hljs-number">0.5</span> * (Qm + Qm.T)
 </div></code></pre>
